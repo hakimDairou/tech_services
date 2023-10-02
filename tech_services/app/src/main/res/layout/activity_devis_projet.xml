@@ -1,0 +1,278 @@
+<!-- activity_main.xml -->
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bleu_reduit"
+    android:layout_margin="10dp"
+    tools:context=".DevisProjetActivity">
+
+    <!-- Contenu de l'activité principale -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/toolbar"
+        app:title="Dévis"
+        app:titleTextColor="@color/white"
+        android:elevation="4dp"
+        android:background="@color/bleu_foncer"
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/navImage"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/logorose"
+            android:scaleType="centerCrop"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="112dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_open_modal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="240dp"
+                android:padding="10dp"
+                android:background="@drawable/div_round_bleu"
+                android:layout_marginTop="195dp"
+                android:text="Ajouter" />
+
+            <!-- Modal -->
+
+            <RelativeLayout
+                android:id="@+id/modal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="16dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:background="@drawable/div_round_bleu"
+                    android:layout_margin="15dp"
+                    android:padding="16dp">
+
+                    <EditText
+                        android:id="@+id/et_nom_produit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Désignation"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/et_prix_produit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Prix unitaire"
+                        android:inputType="numberDecimal" />
+
+                    <!--            <AutoCompleteTextView-->
+                    <!--                android:id="@+id/actv_categorie"-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:hint="Catégorie du matériel"-->
+                    <!--                android:inputType="text" />-->
+
+                    <Spinner
+                        android:id="@+id/actv_categorie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Specification"
+                        android:entries="@array/choices" />
+
+                    <Button
+                        android:id="@+id/btn_enregistrer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/div_round_orange"
+                        android:text="Enregistrer" />
+
+                    <Button
+                        android:id="@+id/btn_annuler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/div_round_red"
+                        android:text="Annuler" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/productSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="16dp"
+                    />
+
+                <AutoCompleteTextView
+                    android:id="@+id/searchAutoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:hint="Rechercher d'un matériel..." />
+
+                <!-- Ajoutez d'autres champs de formulaire ici -->
+
+                <Button
+                    android:id="@+id/submitButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/div_round_bleu"
+                    android:text="Soumettre" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/monTableau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableLayout
+                    android:id="@+id/tableLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="260dp">
+
+                    <!-- Header du tableau -->
+                    <!--        <TableRow-->
+
+                    <!--            style="@style/TableHeader">-->
+
+                    <!--            &lt;!&ndash; Colonnes du header &ndash;&gt;-->
+                    <!--            <TextView-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_column="1"-->
+                    <!--                android:padding="10dp"-->
+                    <!--                android:text="Désignation" />-->
+
+                    <!--            <TextView-->
+                    <!--                android:layout_width="80dp"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_column="2"-->
+                    <!--                android:padding="10dp"-->
+                    <!--                android:text="Qté" />-->
+
+                    <!--            <TextView-->
+                    <!--                android:layout_width="80dp"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_column="3"-->
+                    <!--                android:padding="10dp"-->
+                    <!--                android:text="P.U" />-->
+
+                    <!--            <TextView-->
+                    <!--                android:layout_width="80dp"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_column="4"-->
+                    <!--                android:padding="10dp"-->
+                    <!--                android:text="P.T" />-->
+                    <!--        </TableRow>-->
+
+                    <!--        &lt;!&ndash; Ligne 1 du tableau &ndash;&gt;-->
+                    <!--        <TableRow-->
+
+                    <!--            style="@style/TableRowEven">-->
+
+                    <!--            &lt;!&ndash; Colonnes de la ligne 1 &ndash;&gt;-->
+                    <!--            <TextView-->
+                    <!--                android:id="@+id/text_designation"-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_column="1"-->
+                    <!--                android:text="Produit 1" />-->
+
+                    <!--            <TextView-->
+                    <!--                android:id="@+id/text_quantite"-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_column="2"-->
+                    <!--                android:text="10" />-->
+
+                    <!--            <TextView-->
+                    <!--                android:id="@+id/text_prix_unitaire"-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_column="3"-->
+                    <!--                android:text="5.00" />-->
+
+                    <!--            <TextView-->
+                    <!--                android:id="@+id/text_montant_total"-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_column="4"-->
+                    <!--                android:text="50.00" />-->
+                    <!--        </TableRow>-->
+
+                    <!-- Ligne 2 du tableau -->
+                    <!--        <TableRow-->
+                    <!--            style="@style/TableRowOdd">-->
+
+                    <!--            &lt;!&ndash; Colonnes de la ligne 2 &ndash;&gt;-->
+                    <!--            <TextView-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_column="1"-->
+                    <!--                android:text="Produit 2" />-->
+
+                    <!--            <TextView-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_column="2"-->
+                    <!--                android:text="5" />-->
+
+                    <!--            <TextView-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_column="3"-->
+                    <!--                android:text="7.50" />-->
+
+                    <!--            <TextView-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_column="4"-->
+                    <!--                android:text="37.50" />-->
+                    <!--        </TableRow>-->
+
+                    <!--        <Button-->
+                    <!--            android:id="@+id/downloadButton"-->
+                    <!--            android:layout_width="80dp"-->
+                    <!--            android:layout_height="wrap_content"-->
+                    <!--            android:background="@drawable/div_round_vert"-->
+                    <!--            android:text="Télécharger"-->
+                    <!--            android:layout_margin="10dp"-->
+                    <!--            />-->
+                </TableLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

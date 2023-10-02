@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lavender"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nomduProjet"
+            android:layout_marginTop="14dp"
+            android:text="Nom du projet"
+            android:textSize="24dp"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="380dp"
+            android:layout_height="200dp"
+            android:id="@+id/cardImage"
+            android:layout_gravity="center"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:layout_width="380dp"
+                android:layout_height="200dp"
+                android:id="@+id/detailImage"
+                android:layout_gravity="center"
+                android:src="@drawable/item_sbtp6_img"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maitre d'oeuvre : "
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/tsA"
+            android:layout_marginStart="10dp"
+            android:textSize="16dp"
+            android:id="@+id/nomduClient"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lieu"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="42 jours"
+            android:layout_marginStart="10dp"
+            android:textSize="16dp"
+            android:id="@+id/lieu"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Numéro de téléphone"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="16 jours"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:id="@+id/telephone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2 750 000 F CFA"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:id="@+id/descriptionProjet"/>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="55dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:text="Acceptet"
+                android:textColor="@color/white"
+                android:background="@drawable/div_round_vert"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:text="Fermer"
+                android:textColor="@color/white"
+                android:background="@drawable/div_round_orange"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:text="Refuser"
+                android:textColor="@color/white"
+                android:background="@drawable/div_round_red"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

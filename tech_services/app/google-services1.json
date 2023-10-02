@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "400706355678",
+    "project_id": "techservices-28ccb",
+    "storage_bucket": "techservices-28ccb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400706355678:android:f865635c56ba73864e9d4f",
+        "android_client_info": {
+          "package_name": "com.example.tech_services"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400706355678-94odno4iqfkqc478vsk9e2svr7g8lu98.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb4JaBWiHn-Q_8TiCGFFo3soJe47qDz-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400706355678-94odno4iqfkqc478vsk9e2svr7g8lu98.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

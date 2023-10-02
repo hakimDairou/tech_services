@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "659986715414",
+    "firebase_url": "https://techservice-5a46b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "techservice-5a46b",
+    "storage_bucket": "techservice-5a46b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659986715414:android:92d00520a1a1610962b637",
+        "android_client_info": {
+          "package_name": "com.example.tech_services"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659986715414-rhku7e6gipp7qvm8mjclq3jcbthfrp2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAseDwe5TnAr6q2LgLTUQdwd9-FMEQ6bx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659986715414-rhku7e6gipp7qvm8mjclq3jcbthfrp2m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

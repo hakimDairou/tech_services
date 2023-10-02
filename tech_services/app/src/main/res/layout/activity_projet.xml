@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProjetActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/toolbar"
+        app:title="Liste des projets"
+        app:titleTextColor="@color/white"
+        android:elevation="4dp"
+        android:background="@color/bleu_foncer"
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/navImage"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/logorose"
+            android:scaleType="centerCrop"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame_layout"
+        android:background="@color/white"
+        >
+
+    <ListView
+        android:id="@+id/shop_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:dividerHeight="10.0sp"
+        tools:listitem="@layout/adapter_item_projet">
+
+    </ListView>
+    </FrameLayout>
+
+</LinearLayout>

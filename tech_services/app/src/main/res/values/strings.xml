@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">techServices</string>
+    <string name="open_nav">Ouvrir le navigateur</string>
+    <string name="close_nav">ferme le navigateur</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="title_activity_dashboard">dashboard</string>
+
+    <string name="password">Votre mot de passe</string>
+    <string name="nom_tech">Votre nom</string>
+    <string name="email_tech">Votre email</string>
+    <string name="phone_tech">Votre numéro de téléphone</string>
+    <string name="competence_tech">Votre compétence</string>
+    <string name="cni_tech">Votre numéro de CNI</string>
+    <string name="matricule_tech">Votre matricule</string>
+    <string name="item_default_nom_projet">Nom du projet</string>
+    <string name="item_default_price_projet">Encours</string>
+
+    // List clients
+
+    <string name="tsA">Marc Donald</string>
+    <string name="tsB">Arnauld</string>
+    <string name="tsC">Rostand</string>
+    <string name="tsD">Midrel</string>
+    <string name="tsE">Christian</string>
+    <string name="tsF">Alima</string>
+    <string name="tsG">Raissa</string>
+
+
+    <string-array name="choices">
+        <item>Matériel</item>
+        <item>Main d oeuvre</item>
+    </string-array>
+
+
+    <string name="logotech">logotech</string>
+    <string name="cr_ation_de_compte">Création de compte</string>
+    <string name="votre_nom">Votre nom</string>
+    <string name="votre_adresse_mail">Votre adresse mail</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="votre_mot_de_passe">Votre mot de passe</string>
+    <string name="connexion">Connexion</string>
+    <string name="pas_encore_de_compte">Pas encore de compte ?</string>
+    <string name="inscrivez_vous">Inscrivez-vous</string>
+    <string name="connectez_vous">Connectez-vous</string>
+    <string name="vous_avez_d_j_un_compte">Vous avez déjà un compte ?</string>
+    <string name="s_inscrire">S\'inscrire</string>
+    <string name="votre_lieu_d_habitation">Votre lieu d\'habitation</string>
+    <string name="votre_num_ro_de_t_l_phone">Votre numéro de téléphone</string>
+    <string name="inscription">Inscription</string>
+    <string name="votre_code">Votre code</string>
+    <string name="vous_allez_recevoir_un_code_de_v_rification_par_sms">Vous allez recevoir un code de vérification par sms</string>
+    <string name="verification">Verification</string>
+    <string name="bienvenue">Bienvenue</string>
+    <string name="d_pannage">Dépannage</string>
+    <string name="construction">Construction</string>
+    <string name="bureau_d_tude">Bureau d\'étude</string>
+    <string name="quincaillerie">Quincaillerie</string>
+    <string name="architecture">Architecture</string>
+    <string name="laboratoire">Laboratoire</string>
+    <string name="projets">Projets</string>
+    <string name="filtres">filtres</string>
+    <string name="assistance">Assistance</string>
+    <string name="profil">Profil</string>
+    <string name="technicien_disponible">Technicien Disponible</string>
+    <string name="aucune_notification_pour_le_moment">aucune notification pour le moment :\')</string>
+    <string name="todo">TODO</string>
+    <string name="messagerie">Messagerie</string>
+    <string name="aucun_projet_pour_l_instant">Aucun projet pour l\'instant</string>
+    <string name="ticket_client">Ticket Client</string>
+    <string name="rechercher">Rechercher…</string>
+    <string name="todo1">TODO1</string>
+    <string name="todo2">TODO2</string>
+    <string name="d_signation">Désignation</string>
+    <string name="qt">Qté</string>
+    <string name="p_u">P.U</string>
+    <string name="prix_total">Prix Total</string>
+    <string name="john_doe">John Doe</string>
+    <string name="_25">25</string>
+    <string name="d_tails">Détails</string>
+    <string name="expoter_le_pdf">Expoter le PDF</string>
+    <string name="votre_message">Votre message</string>
+    <string name="formulaire">Formulaire</string>
+    <string-array name="filtre">
+        <item>filtre</item>
+        <item>encours</item>
+        <item>en attentes</item>
+        <item>réalisés</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alwaysDrawnWithCache="true"
+    android:background="@color/colorFond"
+    tools:context=".ProfileFragment">
+
+
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:padding="16dp">
+
+      <ImageView
+          android:id="@+id/profile_picture"
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          android:src="@drawable/baseline_person_24"
+          android:scaleType="centerCrop"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginBottom="16dp"/>
+
+      <EditText
+          android:id="@+id/profile_name"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white"
+          android:textSize="24sp"
+          android:textStyle="bold"
+          android:hint="Nom"
+          android:layout_marginBottom="8dp"/>
+
+      <EditText
+          android:id="@+id/profile_email"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white"
+          android:textSize="16sp"
+          android:hint="Email"
+          android:layout_marginBottom="8dp"/>
+
+      <EditText
+          android:id="@+id/profile_phone"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white"
+          android:textSize="16sp"
+          android:hint="Téléphone"
+          android:layout_marginBottom="8dp"/>
+
+      <EditText
+          android:id="@+id/profile_skills"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white"
+          android:textSize="16sp"
+          android:hint="Compétences"
+          android:layout_marginBottom="8dp"/>
+
+      <TextView
+          android:id="@+id/profile_rating"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white"
+          android:textSize="16sp"
+          android:hint="Note sur 10"
+          android:layout_marginBottom="8dp"/>
+
+<!--      <Button-->
+<!--          android:id="@+id/profile_status_button"-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="wrap_content"-->
+<!--          android:text="Activer"-->
+<!--          android:layout_marginBottom="8dp"/>-->
+      <Button
+          android:id="@+id/button_activation"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:text="Activer"
+          android:textColor="@android:color/white"
+          android:backgroundTint="@color/colorActive"
+          android:onClick="onActivationButtonClick" />
+      <Button
+          android:id="@+id/profile_save_button"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/div_round_bleu"
+          android:layout_marginTop="20dp"
+          android:text="Enregistrer"/>
+
+   </LinearLayout>
+
+
+
+
+</RelativeLayout>

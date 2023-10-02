@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GestionProjetActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/toolbar"
+        app:title="Détails"
+        app:titleTextColor="@color/white"
+        android:elevation="4dp"
+        android:background="@color/bleu_foncer"
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/navImage"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/logorose"
+            android:scaleType="centerCrop"
+            />
+        <Button
+            android:id="@+id/devis_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faire le DEVIS"
+            />
+    </androidx.appcompat.widget.Toolbar>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFond"
+    android:layout_marginTop="112dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorFond"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/projectImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/item_sbtp1_img"
+            android:scaleType="centerCrop"
+            android:contentDescription="Project Image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom du projet"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/projectName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom du projet"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:text="Maître d'œuvre" />
+        <TextView
+            android:id="@+id/projectOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maître d'œuvre" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Durée du projet"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/projectDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Durée du projet" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Temps écoulé"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/projectElapsedTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temps écoulé" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Description du projet"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/projectDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description du projet" />
+
+
+
+
+        <TextView
+            android:id="@+id/projectTasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Tâches à réaliser" />
+
+        <ListView
+            android:id="@+id/tasksListView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+
+        <TextView
+            android:id="@+id/completedTasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Tâches réalisées" />
+
+        <ProgressBar
+            android:id="@+id/tasksProgressBar"
+            android:layout_marginTop="5dp"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>
