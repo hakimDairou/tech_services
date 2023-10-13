@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".TechnicienClientAccueilActivity"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/round_header_blue">
+
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:src="@drawable/logorose"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/ImageBVN2023"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rdt" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               >
+
+               <Button
+                   android:id="@+id/createAccountTechnicienButton"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="Compte Technicien"
+                   android:textStyle="bold"
+                   android:textSize="30dp"
+                   />
+               <Button
+                   android:id="@+id/createAccountClientButton"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="Compte Client"
+                   android:textStyle="bold"
+                   android:textSize="30dp"
+                   />
+
+           </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

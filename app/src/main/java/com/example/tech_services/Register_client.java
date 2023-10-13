@@ -73,7 +73,7 @@ public class Register_client extends AppCompatActivity {
         loginSignin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Register_client.this, Connexion_client.class);
+                Intent intent = new Intent(Register_client.this, login.class);
                 startActivity(intent);
             }
         });

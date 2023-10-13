@@ -25,6 +25,8 @@ public class login extends AppCompatActivity {
 
     EditText usernameEt, passwordET;
     TextView signUpBtnLogin, signInBtnRegister;
+    String identifiant;
+    String marc;
     private boolean passwordshowing = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +66,7 @@ public class login extends AppCompatActivity {
         signInBtnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(login.this, Register.class));
+                startActivity(new Intent(login.this, RedirectionTechnicienEtClientActivity.class));
             }
         });
 
@@ -79,7 +81,16 @@ public class login extends AppCompatActivity {
 
                 }else {
 
-                    startActivity(new Intent(login.this, Dashboard.class));
+                    identifiant = usernameEt.getText().toString();
+                    marc = "sahel";
+                    if (marc.equals(identifiant)){
+                        startActivity(new Intent(login.this, Dashboard.class));
+                    }
+
+                    else {
+                            startActivity(new Intent(login.this, Dashboard_client.class));
+                        }
+
 //                    // Créez une instance de la classe DatabaseHelper
 //                    TechServiceDB dbHelper = new TechServiceDB(this);
 //

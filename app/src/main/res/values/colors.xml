@@ -2,6 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#DDFFFFFF</color>
+    <color name="whiteFlou">#BEFFFFFF</color>
+
 
     <color name="bleu_foncer">#4179DB</color>
     <color name="bleu_reduit">#8B0574CC</color>

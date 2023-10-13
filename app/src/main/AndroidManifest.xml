@@ -26,8 +26,11 @@
         android:theme="@style/Theme.Tech_services"
         tools:targetApi="31">
         <activity
+            android:name=".RedirectionTechnicienEtClientActivity"
+            android:exported="false" />
+        <activity
             android:name=".TechnicienClientAccueilActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -71,7 +74,7 @@
             android:exported="false" />
         <activity
             android:name=".Dashboard"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity android:name=".OTPVerification" />
         <activity android:name=".Register" />
         <activity
@@ -130,9 +133,7 @@
             android:exported="false" />
         <activity
             android:name=".Connexion_client"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
