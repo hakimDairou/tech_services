@@ -107,12 +107,12 @@
     <View
         android:id="@+id/view3"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="430dp"
+        android:layout_height="85dp"
         android:background="@color/tsblue"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/homeDashboard"
@@ -120,21 +120,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view3"
-        app:srcCompat="@drawable/baseline_home_2"
-        />
+        app:srcCompat="@drawable/baseline_home_2" />
 
     <ImageView
         android:id="@+id/btnProjet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view3"
-        app:srcCompat="@drawable/baseline_dashboard_24"
-         />
+        app:srcCompat="@drawable/baseline_dashboard_24" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -142,10 +142,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view3"
-        app:srcCompat="@drawable/baseline_person"
-         />
+        app:srcCompat="@drawable/baseline_person" />
 
     <ScrollView
         android:layout_width="match_parent"

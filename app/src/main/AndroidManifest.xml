@@ -103,7 +103,7 @@
             android:exported="true" />
         <activity
             android:name=".Projet_details_client"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Details_devis_client"
             android:exported="false" />
@@ -121,7 +121,7 @@
             android:exported="false" />
         <activity
             android:name=".Projet_client"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Dashboard_client"
             android:exported="false" />
